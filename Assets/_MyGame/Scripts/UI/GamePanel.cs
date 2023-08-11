@@ -28,6 +28,8 @@ namespace Curio.Gameplay
         [SerializeField] private SettingsPanel settingsPanel;
         [SerializeField] private ShopPanel shopPanel;
 
+        [SerializeField] private SoundType levelWinSound;
+
         private int _moveCount = 0;
         private bool unlimitedMoves = false;
 
@@ -112,6 +114,7 @@ namespace Curio.Gameplay
 
         public void LevelCompleted()
         {
+            SoundManager.Instance.Play(levelWinSound);
             LevelManager.instance.SetRewardAmount();
             GameManager.Instance.GameState = GameState.WIN;
             ConfettiController.Instance.PlayBigCelebrationFX(Vector3.zero);

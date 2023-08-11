@@ -28,7 +28,8 @@ namespace Curio.Gameplay
                 instance = this;
             }
 
-            levelIndex = PlayerPrefs.GetInt("LevelIndex", 0);
+            levelIndex = ES3.Load<int>("LevelIndex", 0);
+            //levelIndex = PlayerPrefs.GetInt("LevelIndex", 0);
         }
 
         private void Start()
@@ -47,7 +48,8 @@ namespace Curio.Gameplay
         public void LevelCompleted()
         {
             levelIndex++;
-            PlayerPrefs.SetInt("LevelIndex", levelIndex);
+            ES3.Save<int>("LevelIndex", levelIndex);
+            //PlayerPrefs.SetInt("LevelIndex", levelIndex);
         }
 
         public void SetRewardAmount()

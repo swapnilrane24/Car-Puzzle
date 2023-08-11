@@ -19,6 +19,7 @@ namespace Curio.Gameplay
         [SerializeField] private float moveSpeed;
         [SerializeField] private PathRender pathRender;
         [SerializeField] private GameEvent carReachedEvent;
+        [SerializeField] private SoundType soundType, carHitSound;
 
         public UnityEvent onEndReachedEvent;
         public UnityEvent onBeginReachedEvent;
@@ -54,6 +55,7 @@ namespace Curio.Gameplay
         {
             if (carState != CarState.Moving)
             {
+                SoundManager.Instance.Play(soundType);
                 GamePanel.Instance.ReduceMoveCount(1);
                 moveForward = !moveForward;
                 _follower.follow = true;
@@ -93,6 +95,7 @@ namespace Curio.Gameplay
         {
             if (other.TryGetComponent<IObstacle>(out IObstacle obstacle))
             {
+                SoundManager.Instance.Play(carHitSound);
                 _follower.follow = false;
                 GamePanel.Instance.LevelFailed();
             }

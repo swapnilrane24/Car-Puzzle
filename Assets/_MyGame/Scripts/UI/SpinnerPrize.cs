@@ -10,6 +10,7 @@ namespace Curio.Gameplay
 {
     public class SpinnerPrize : MonoBehaviour
     {
+        [SerializeField] private SoundType coinCollectSound;
         [SerializeField] private Animator spinnerAnim;
         [SerializeField] private TogglePanel levelCompletePanel;
         [SerializeField] private TextMeshProUGUI adsRewardText;
@@ -58,6 +59,7 @@ namespace Curio.Gameplay
 
         public void Coins_Animation()
         {
+            SoundManager.Instance.Play(coinCollectSound);
             //play vibration
             int coinAnimationDoneCount = 0; //used just to make sure scene is loaded only on last coin animation
             for (int i = 0; i < coins.Length; i++)
@@ -77,6 +79,7 @@ namespace Curio.Gameplay
                 .Append(coins[i].DOLocalMove(mainCoinIcon.transform.localPosition, Random.Range(.5f, 1f)).SetEase(Ease.OutBack))
                 .OnComplete(() => {
                     coinAnimationDoneCount++;
+                    
                     if (coinAnimationDoneCount >= coins.Length)
                     {
                         GameManager.Instance.AddMoney(GameManager.Instance.RoundEarning);

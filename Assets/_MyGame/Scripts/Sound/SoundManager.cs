@@ -31,7 +31,7 @@ namespace Curio.Gameplay
 
         public static SoundManager Instance { get => instance; }
 
-        private bool soundOn;
+        private bool soundOn = true;
 
         private void Awake()
         {

@@ -268,7 +268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &191714216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,10 +283,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMusic: {fileID: 0}
   musicVolume: 0
-  pickUpSounds: []
+  pickUpSounds:
+  - soundType: {fileID: 11400000, guid: 335822799b5c54c378af89bdbd3febfa, type: 2}
+    clip: {fileID: 8300000, guid: 5683c68a06428a64e9fb62b696f8f197, type: 3}
+    volume: 0.5
+    pitch: 1
   boosterSounds: []
-  extraSounds: []
-  uiSounds: []
+  extraSounds:
+  - soundType: {fileID: 11400000, guid: 1b0b803df12a343379d15b4c8176cd11, type: 2}
+    clip: {fileID: 8300000, guid: 189ca99f93e024be99d6c97c1192e0eb, type: 3}
+    volume: 0.5
+    pitch: 1
+  - soundType: {fileID: 11400000, guid: 3a8d470c5cf374280b4b564fce455ec7, type: 2}
+    clip: {fileID: 8300000, guid: 3395cba04f0c84d38ab23197b027f007, type: 3}
+    volume: 1
+    pitch: 1
+  uiSounds:
+  - soundType: {fileID: 11400000, guid: 4dff37b32b3de4467bb4fb460d2c1ed3, type: 2}
+    clip: {fileID: 8300000, guid: 6747bd72b24b21142b270b2c1266e8a4, type: 3}
+    volume: 0.5
+    pitch: 1
+  - soundType: {fileID: 11400000, guid: a22f991b0925d46e6be9f86ce8abb655, type: 2}
+    clip: {fileID: 8300000, guid: 43ce896ab95542443a75f243977bdaaa, type: 3}
+    volume: 1
+    pitch: 1
   pickUpAudioSource: {fileID: 1155527035}
   boosterAudioSource: {fileID: 1042045297}
   extraAudioSource: {fileID: 161249106}
@@ -797,7 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f3e72318d544fbc82354aa63a8390e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playAssignedLevel: 1
+  playAssignedLevel: 0
   assignedLevelIndex: 19
   levels:
   - {fileID: 3246825758367375945, guid: 183b920301af8431db0d467c405d32bb, type: 3}

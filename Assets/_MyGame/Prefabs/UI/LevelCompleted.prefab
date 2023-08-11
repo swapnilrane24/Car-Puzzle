@@ -2373,6 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f96dc66c1bed4e6987c333c8421d531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinCollectSound: {fileID: 11400000, guid: a22f991b0925d46e6be9f86ce8abb655, type: 2}
   spinnerAnim: {fileID: 7255192911388082416}
   levelCompletePanel: {fileID: 7255192910667723962}
   adsRewardText: {fileID: 7255192911118143698}
