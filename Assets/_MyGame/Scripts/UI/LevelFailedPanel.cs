@@ -25,8 +25,12 @@ namespace Curio.Gameplay
 
         private void NoThanksButton()
         {
-            GameManager.Instance.GameState = GameState.PLAYING;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameAdsManager.Instance.ShowNormalAd(() =>
+            {
+                GameManager.Instance.GameState = GameState.PLAYING;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            });
+            
         }
 
         private void ReviveAdsButton()

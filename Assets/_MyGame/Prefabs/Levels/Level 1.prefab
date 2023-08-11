@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraFOV: 55
+  orthoSize: 3.6
   cameraTransform: {x: 0, y: 7, z: 1}
   moveCount: 0
   rewardAmount: 10
@@ -405,6 +406,11 @@ PrefabInstance:
       propertyPath: _result.forward.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904734, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
       propertyPath: _result.size
@@ -444,6 +450,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _result.position.z
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959027440936416, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8499959027440936445, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}

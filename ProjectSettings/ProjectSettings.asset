@@ -509,6 +509,9 @@ PlayerSettings:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
     m_Automatic: 1
+  - m_BuildTarget: WebGLSupport
+    m_APIs: 0b000000
+    m_Automatic: 0
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -767,7 +770,7 @@ PlayerSettings:
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: APPLICATION:Default
+  webGLTemplate: PROJECT:Crazy_2020
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 0
@@ -783,7 +786,7 @@ PlayerSettings:
     PS4: UNITY_VISUAL_SCRIPTING
     Server: UNITY_VISUAL_SCRIPTING
     Standalone: UNITY_VISUAL_SCRIPTING
-    WebGL: UNITY_VISUAL_SCRIPTING
+    WebGL: UNITY_VISUAL_SCRIPTING;DREAMTECK_SPLINES
     Windows Store Apps: UNITY_VISUAL_SCRIPTING
     XboxOne: UNITY_VISUAL_SCRIPTING
     iPhone: UNITY_VISUAL_SCRIPTING

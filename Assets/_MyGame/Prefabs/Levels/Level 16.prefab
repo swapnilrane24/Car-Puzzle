@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraFOV: 70
-  cameraTransform: {x: 0, y: 7, z: 1}
+  orthoSize: 4.2
+  cameraTransform: {x: 0, y: 7, z: 2}
   moveCount: 10
   rewardAmount: 45
 --- !u!114 &3246825758367375944

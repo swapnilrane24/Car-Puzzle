@@ -37,27 +37,39 @@ namespace Curio.Gameplay
             adsRewardText.text = "" + CurrencyToString.Convert((multiplier * GameManager.Instance.RoundEarning));
         }
 
-        private void RewardCallBack()
-        {
-            GameManager.Instance.AddMoney(totalRewardEarning);
-        }
+        //private void RewardCallBack()
+        //{
+        //    GameManager.Instance.AddMoney(totalRewardEarning);
+        //}
 
         private void RewardButtonListner()
         {
             spinnerAnim.enabled = false;
             rewardAdButton.interactable = false;
+            noThanksButton.interactable = false;
+            GameAdsManager.Instance.ShowRewardedAds((bool value) =>
+            {
+                if (value == true)
+                {
+                    Coins_Animation(true);
+                }
+                else
+                {
+                    Coins_Animation(false);
+                }
+            });
         }
 
         private void NoThanksButtonListner()
         {
             //pay coins
-            Coins_Animation();
+            Coins_Animation(false);
             spinnerAnim.enabled = false;
             rewardAdButton.interactable = false;
             noThanksButton.interactable = false;
         }
 
-        public void Coins_Animation()
+        public void Coins_Animation(bool adBoost)
         {
             SoundManager.Instance.Play(coinCollectSound);
             //play vibration
@@ -82,7 +94,11 @@ namespace Curio.Gameplay
                     
                     if (coinAnimationDoneCount >= coins.Length)
                     {
-                        GameManager.Instance.AddMoney(GameManager.Instance.RoundEarning);
+                        if (adBoost == false)
+                            GameManager.Instance.AddMoney(GameManager.Instance.RoundEarning);
+                        else
+                            GameManager.Instance.AddMoney(totalRewardEarning);
+
                         LevelManager.instance.LevelCompleted();
                         GameManager.Instance.GameState = GameState.PLAYING;
                         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
