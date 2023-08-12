@@ -4,6 +4,7 @@ using UnityEngine;
 using Dreamteck.Splines;
 using UnityEngine.Events;
 using ScriptableObjectArchitecture;
+using Sirenix.OdinInspector;
 
 namespace Curio.Gameplay
 {
@@ -20,6 +21,11 @@ namespace Curio.Gameplay
         [SerializeField] private PathRender pathRender;
         [SerializeField] private GameEvent carReachedEvent;
         [SerializeField] private SoundType soundType, carHitSound;
+        [Space(10)]
+        [SerializeField] private SpriteRenderer visualSprite;
+        [SerializeField] private VehicleVisualData vehicleVisualData;
+        [OnValueChanged("UpdateVisual")]
+        [SerializeField] private int visualIndex;
 
         public UnityEvent onEndReachedEvent;
         public UnityEvent onBeginReachedEvent;
@@ -41,6 +47,14 @@ namespace Curio.Gameplay
         {
             _follower.onEndReached += EndReached;
             _follower.onBeginningReached += BeginReached;
+
+            UpdateVisual();
+        }
+
+        private void UpdateVisual()
+        {
+            if (visualSprite != null && vehicleVisualData != null)
+                visualSprite.sprite = vehicleVisualData.GetSprite(visualIndex, 0);
         }
 
         private void Update()

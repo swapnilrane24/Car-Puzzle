@@ -407,8 +407,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: cc8c9509797d848bfa8382b78fcfdfbc,
+      objectReference: {fileID: 21300000, guid: 395fbda59fc954fde906974629c78b07,
         type: 3}
+    - target: {fileID: 8499959025995904728, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: visualIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
       propertyPath: _result.size
@@ -456,8 +461,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
+      propertyPath: _finalResult.forward.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
       propertyPath: _clipToSample.forward.z
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.position.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.position.z
+      value: 4.25
       objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
@@ -722,6 +742,11 @@ PrefabInstance:
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
       propertyPath: _result.position.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.position.x
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,

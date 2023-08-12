@@ -180,8 +180,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 12b63e11b958f40c28068cb0f2aa898e,
+      objectReference: {fileID: 21300000, guid: addfa32ea4ca24bcf85765fc66abd00e,
         type: 3}
+    - target: {fileID: 8499959025995904728, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: visualIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
       propertyPath: _result.size
@@ -234,6 +239,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
+      propertyPath: _finalResult.forward.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.forward.z
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
       propertyPath: _clipToSample.forward.x
       value: 1.0000001
       objectReference: {fileID: 0}
@@ -241,6 +256,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _clipToSample.forward.z
       value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.position.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _finalResult.position.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
@@ -271,6 +296,41 @@ PrefabInstance:
         type: 3}
       propertyPath: _clipFromSample.position.z
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959025995904734, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000008940697
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.up.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
@@ -492,6 +552,17 @@ PrefabInstance:
       propertyPath: _clipFromSample.position.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8499959025912908571, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 703221e0250d847bfb0236a211be2a69,
+        type: 3}
+    - target: {fileID: 8499959025995904728, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: visualIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8499959025995904730, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}
       propertyPath: _result.size
@@ -571,6 +642,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _clipFromSample.position.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.up.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
+        type: 3}
+      propertyPath: _result.color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8499959026484446356, guid: 2de5fee85725540d88891fce2e3d2230,
         type: 3}

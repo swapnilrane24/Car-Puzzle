@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3486712310565560651}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.01, y: 0, z: -0.03}
-  m_LocalScale: {x: 0.8, y: 0.89, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3486712311851325976}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 91f380b6e0851ed478115401d280e3e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 395fbda59fc954fde906974629c78b07, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,7 +190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: e54e13fa1133647a4a380a16529058c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51859fff5d65246609a5f423a554db98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -256,6 +256,9 @@ MonoBehaviour:
   carReachedEvent: {fileID: 11400000, guid: 318319fed165e4331841a6c8f7afb545, type: 2}
   soundType: {fileID: 11400000, guid: 1b0b803df12a343379d15b4c8176cd11, type: 2}
   carHitSound: {fileID: 11400000, guid: 3a8d470c5cf374280b4b564fce455ec7, type: 2}
+  visualSprite: {fileID: 3486712312477142635}
+  vehicleVisualData: {fileID: 11400000, guid: ca930fe1515f54c7ea27be63f187be8b, type: 2}
+  visualIndex: 0
   onEndReachedEvent:
     m_PersistentCalls:
       m_Calls: []

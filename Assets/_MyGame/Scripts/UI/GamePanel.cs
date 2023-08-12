@@ -96,12 +96,12 @@ namespace Curio.Gameplay
         {
             if (unlimitedMoves == false)
             {
-                _moveCount -= amount;
                 if (_moveCount <= 0)
                 {
                     _moveCount = 0;
                     LevelFailed();
                 }
+                _moveCount -= amount;
                 moveText.text = "Move " + _moveCount;
             }
         }
